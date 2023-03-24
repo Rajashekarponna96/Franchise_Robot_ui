@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#121C53"
+        tools:context=".HomeActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/black"
+                android:gravity="center"
+                android:text="PROSPERO"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_40sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/light"
+                android:gravity="center"
+                android:text="Could you please spare a moment to share your details with us ?"
+                android:textColor="#7E7979"
+                android:textSize="@dimen/_10sdp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="SURE, ASK"
+                app:backgroundTint="#001797"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingStart="@dimen/_22sdp"
+                android:paddingEnd="@dimen/_22sdp"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+                android:fontFamily="@font/black"
+                android:id="@+id/id_ask"
+                android:background="@drawable/rectangleboxwithcurve"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+                android:fontFamily="@font/black"
+                android:paddingTop="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="SURE, ASK"
+                app:backgroundTint="#001797" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

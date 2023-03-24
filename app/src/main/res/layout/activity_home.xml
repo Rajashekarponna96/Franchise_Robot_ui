@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#121C53"
+        tools:context=".HomeActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/white"
+                android:text="PROSPERO"
+                android:fontFamily="@font/black"
+                android:gravity="center"
+                android:textSize="@dimen/_30sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Could you please spare a moment to share your details with us ?"
+                android:gravity="center"
+                android:textColor="#7E7979"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:text="SURE, ASK"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:fontFamily="@font/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_10sdp"
+                android:background="@drawable/rectangleboxwithcurve"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_30sdp"
+                android:id="@+id/id_ask"
+                android:paddingRight="@dimen/_30sdp"
+                app:backgroundTint="#001797"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
